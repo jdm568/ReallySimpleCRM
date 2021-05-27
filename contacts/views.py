@@ -16,11 +16,11 @@ def contact(request):
        message = request.POST['message']
        user_id = request.POST['user_id']
 
-       if request.user.is_authenticated:
-         user_id = request.user.id
-         has_contacted = Contact.objects.all().filter(user_id=user_id)
-         if has_contacted:
-           messages.error(request, 'You have already contacted this user.')
+       # if request.user.is_authenticated:
+         # user_id = request.user.id
+         # has_contacted = Contact.objects.all().filter(user_id=user_id)
+         # if has_contacted:
+          #  messages.error(request, 'You have already contacted this user.')
 
 
        contact = Contact(
