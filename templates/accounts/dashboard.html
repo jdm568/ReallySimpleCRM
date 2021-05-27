@@ -53,6 +53,8 @@
                             <td>
                                 <a class="btn btn-light" href="#">View Contact</a>
                                 <a class="btn btn-light" href="#">Update Contact</a>
+                                <a class="btn btn-light" href="#">Mail Contact</a>
+                                <a class="btn btn-light" href="#">Export Contact</a>
                                 <a class="btn btn-light" href="#">Delete Contact</a>
                             </td>
                         </tr>
@@ -62,6 +64,8 @@
                             <td>
                                 <a class="btn btn-light" href="#">View Contact</a>
                                 <a class="btn btn-light" href="#">Update Contact</a>
+                                <a class="btn btn-light" href="#">Mail Contact</a>
+                                <a class="btn btn-light" href="#">Export Contact</a>
                                 <a class="btn btn-light" href="#">Delete Contact</a>
                             </td>
                         </tr>
@@ -71,6 +75,8 @@
                             <td>
                                 <a class="btn btn-light" href="#">View Contact</a>
                                 <a class="btn btn-light" href="#">Update Contact</a>
+                                <a class="btn btn-light" href="#">Mail Contact</a>
+                                <a class="btn btn-light" href="#">Export Contact</a>
                                 <a class="btn btn-light" href="#">Delete Contact</a>
                             </td>
                         </tr>
@@ -93,6 +99,7 @@
 </div>
 <div class="col-md-3">
     <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Create a Contact</button>
+    <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Import Contact</button>
 </div>
 </div>
 </div>
@@ -130,8 +137,24 @@
                         <input type="email" name="email" class="form-control" {% if user.is_authenticated %} value="{{ user.email }}" {% endif %}} required>
                     </div>
                     <div class="form-group">
-                        <label for="phone" class="col-form-label">Phone:</label>
-                        <input type="text" name="phone" class="form-control">
+                        <label for="address_line_1" class="col-form-label">Address Line 1:</label>
+                        <input type="text" name="address_line_1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="address_line_2" class="col-form-label">Address Line 2:</label>
+                        <input type="text" name="address_line_2" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="col-form-label">City:</label>
+                        <input type="text" name="city" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="state" class="col-form-label">State:</label>
+                        <input type="text" name="state" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode" class="col-form-label">Zip Code:</label>
+                        <input type="text" name="zipcode" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="message" class="col-form-label">Message:</label>

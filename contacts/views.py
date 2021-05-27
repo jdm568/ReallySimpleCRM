@@ -8,7 +8,11 @@ def contact(request):
        first_name = request.POST['first_name']
        last_name = request.POST['last_name']
        email = request.POST['email']
-       phone = request.POST['phone']
+       address_line_1 = request.POST['address_line_1']
+       address_line_2 = request.POST['address_line_2']
+       city = request.POST['city']
+       state = request.POST['state']
+       zipcode = request.POST['zipcode']
        message = request.POST['message']
        user_id = request.POST['user_id']
 
@@ -23,7 +27,11 @@ def contact(request):
        first_name = first_name,
        last_name =last_name,
        email = email,
-       phone = phone,
+       address_line_1 = address_line_1,
+       address_line_2 = address_line_2,
+       city = city,
+       state = state,
+       zipcode = zipcode,
        message = message,
        user_id = user_id )
 
