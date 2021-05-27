@@ -1,7 +1,3 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/django
-# Edit at https://www.toptal.com/developers/gitignore?templates=django
-
 ### Django ###
 *.log
 *.pot
@@ -10,8 +6,9 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media
+/media
 venv
+/static
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -158,3 +155,35 @@ Thumbs.db
 
 # profiling data
 .prof
+reallysimplecrm/settings.py
+reallysimplecrm/static/css/all.css
+reallysimplecrm/static/css/bootstrap.css
+reallysimplecrm/static/css/lightbox.min.css
+reallysimplecrm/static/css/style.css
+reallysimplecrm/static/img/about.jpg
+reallysimplecrm/static/img/building.jpg
+reallysimplecrm/static/img/lightbox/close.png
+reallysimplecrm/static/img/lightbox/loading.gif
+reallysimplecrm/static/img/lightbox/next.png
+reallysimplecrm/static/img/lightbox/prev.png
+reallysimplecrm/static/img/logo.png
+reallysimplecrm/static/img/showcase.jpg
+reallysimplecrm/static/js/bootstrap.bundle.min.js
+reallysimplecrm/static/js/jquery-3.3.1.min.js
+reallysimplecrm/static/js/lightbox.min.js
+reallysimplecrm/static/js/main.js
+reallysimplecrm/static/webfonts/fa-brands-400.eot
+reallysimplecrm/static/webfonts/fa-brands-400.svg
+reallysimplecrm/static/webfonts/fa-brands-400.ttf
+reallysimplecrm/static/webfonts/fa-brands-400.woff
+reallysimplecrm/static/webfonts/fa-brands-400.woff2
+reallysimplecrm/static/webfonts/fa-regular-400.eot
+reallysimplecrm/static/webfonts/fa-regular-400.svg
+reallysimplecrm/static/webfonts/fa-regular-400.ttf
+reallysimplecrm/static/webfonts/fa-regular-400.woff
+reallysimplecrm/static/webfonts/fa-regular-400.woff2
+reallysimplecrm/static/webfonts/fa-solid-900.eot
+reallysimplecrm/static/webfonts/fa-solid-900.svg
+reallysimplecrm/static/webfonts/fa-solid-900.ttf
+reallysimplecrm/static/webfonts/fa-solid-900.woff
+reallysimplecrm/static/webfonts/fa-solid-900.woff2
